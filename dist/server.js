@@ -1,8 +1,8 @@
-import { NodeApp, applyPolyfills } from "astro/app/node";
+import { NodeApp } from "astro/app/node";
 import createMiddleware from "./middleware.js";
 import { createStandaloneHandler } from "./standalone.js";
 import startServer from "./standalone.js";
-applyPolyfills();
+//applyPolyfills();
 function createExports(manifest, options) {
   const app = new NodeApp(manifest);
   options.trailingSlash = manifest.trailingSlash;
