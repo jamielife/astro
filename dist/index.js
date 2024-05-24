@@ -1,4 +1,4 @@
-import { AstroError } from "astro/errors";
+import { AstroError } from "../../../astro/dist/core/errors/errors.js";
 function getAdapter(options) {
   return {
     name: "@astrojs/node",
